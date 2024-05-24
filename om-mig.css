@@ -1,0 +1,90 @@
+:root{
+    --background-color: #E3DED1;
+    --font: #232B38;
+    --color1: #9D8272;
+    --color2: #2B6D6F;
+}
+
+:root {
+    --p-font-family: "Lato", sans-serif;
+    --p-font-weight: 300;
+    --h1-font-family: "Train One", system-ui;
+    --h1-font-weight: 400;
+    --h2-font-family: "Play", sans-serif;
+    --h2-font-weight: 400;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+a {
+    cursor: pointer;
+}
+
+
+h2 {
+    font-family: var(--h2-font-family);
+    font-weight: var(--h2-font-weight);
+    font-size: 70px;
+    color: var(--color1);
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+p {
+    font-family: var(--p-font-family);
+    font-weight: var(--p-font-weight);
+    font-size: 18px;
+    color: var(--font);
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+
+/* HEADER STYLING */
+
+.header-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 160px;
+}
+
+.logo-box img {
+    width: 100%; /* Responsive billede */
+    max-width: 300px; /* Justering af den maksimale bredde, men stadig responsiv */
+    height: auto;
+}
+
+.menu-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 40px;
+}
+
+.menu-box ul li {
+    display: inline;
+}
+
+.menu-box ul li a {
+    font-family: var(--h2-font-family);
+    color: var(--font);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.menu-box ul li a:hover {
+    color: var(--color2);
+}
+
+
+
+
+
+
+
