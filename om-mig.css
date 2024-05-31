@@ -1,90 +1,627 @@
-:root{
-    --background-color: #E3DED1;
-    --font: #232B38;
-    --color1: #9D8272;
-    --color2: #2B6D6F;
-}
-
 :root {
+    --background-color: #e3ded1;
+    --font: #181d24;
+    --font2: #eae5e5;
+    --color1: #bbaf95;
+    --color2: #2b6d6f;
+    --color3: #232b38;
+    --color4: #9d8272;
     --p-font-family: "Lato", sans-serif;
-    --p-font-weight: 300;
     --h1-font-family: "Train One", system-ui;
-    --h1-font-weight: 400;
     --h2-font-family: "Play", sans-serif;
-    --h2-font-weight: 400;
 }
 
 body {
     background-color: var(--background-color);
+    margin: 0;
 }
 
-a {
+@media screen and (max-width: 800px) {
+
+/* HEADER STYLING MOBIL */
+    header {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+    }
+        
+/* LOGO MOBIL */
+        
+    .logo img {
+        width: 100%;
+        height: auto;
+        max-width: 125px;
+        }
+    
+    .logo a {
+        text-decoration: none;
+    }
+        
+/* MENU MOBIL */
+        
+.menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: var(--font);
+    text-align: center;
+    z-index: 1;
+}
+
+.menu-icon {
+    font-size: 15vw;
+    margin-top: -15px;
     cursor: pointer;
-}
-
-
-h2 {
-    font-family: var(--h2-font-family);
-    font-weight: var(--h2-font-weight);
-    font-size: 70px;
-    color: var(--color1);
-    letter-spacing: 2px;
-    line-height: 30px;
-}
-
-p {
-    font-family: var(--p-font-family);
-    font-weight: var(--p-font-weight);
-    font-size: 18px;
+    display: block;
     color: var(--font);
-    letter-spacing: 2px;
-    line-height: 30px;
 }
 
-
-/* HEADER STYLING */
-
-.header-box {
+#menu-toggle {
+    display: none;
+}
+    
+#menu-toggle:checked + .menu-icon + .menu {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 30px 160px;
+    padding-top: 10px;
 }
 
-.logo-box img {
-    width: 100%; /* Responsive billede */
-    max-width: 300px; /* Justering af den maksimale bredde, men stadig responsiv */
-    height: auto;
-}
-
-.menu-box ul {
-    list-style: none;
+.menu ul {
+    list-style-type: none;
     padding: 0;
     margin: 0;
+    width: 100%;
+}
+
+.menu ul li {
+    margin: 10px 0;
+}
+    
+.menu ul li a {
+    text-decoration: none;
+    color: var(--font2);
+    font-family: var(--h2-font-family);
+    font-size: 18px;
+    display: block;
+    padding: 10px 0;
+}
+
+/* OM MIG STYLING */
+
+.box1 {
+    margin: 0;
     display: flex;
-    gap: 40px;
+    flex-direction: column;
+    padding: 0px 40px;
+    margin-bottom: 20px;
 }
 
-.menu-box ul li {
-    display: inline;
+.box1 .tekst-box1 {
+    display: flex;
+    justify-content: center;
 }
 
-.menu-box ul li a {
+/* overskrift */
+.box1 .box-overskrift-ommig {
+    margin: 0;
+    display: flex;
+
+}
+.box1 .box-overskrift-ommig h2 {
+    font-size: 40px;
+    letter-spacing: 3px;
     font-family: var(--h2-font-family);
     color: var(--font);
-    text-decoration: none;
+}
+
+/* tekst og foto */
+.box1 .tekst-box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box1 .tekst-box1 .tekst1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.box1 .tekst-box1 .tekst1 .p1 {
     font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 350;
+    line-height: 24px;
+    font-family: var(--p-font-family);
+    color: var(--font);
+    align-self: flex-end;
+    width: 100%;
+}
+
+.box1 .tekst-box1 .foto-box {
+    align-self: flex-start;
+}
+
+.box1 .tekst-box1 .foto-box img {
+    display: none;
+}
+
+.box1 .foto-box2 {
+    display: flex;
+    align-self: center;
+}
+
+.box1 .foto-box2 img {
+    width: 100%;
+    max-width: 350px;
+    min-width: 200px;
+    border-radius: 10px;
+}
+
+/* PROGRAMMER */
+.box1 .tool-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.box1 .tool-box img {
+    width: 100%;
+    max-width: 400px;
+}
+
+    /* FOOTER STYLING WEB */
+    .footer-box {
+        margin: 0;
+        background-color: var(--font);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+/*copy og some*/
+    .footer-box .copy-some-footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-box .copy-some-footer .some-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        padding-bottom: 10px;
+    }
+
+    .footer-box .copy-some-footer .some-box img {
+        width: 100%;
+        max-width: 50px;
+    }
+
+    .footer-box .copy-some-footer .copy {
+        font-family: var(--p-font-family);
+        color: var(--font2);
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 200;
+        display: flex;
+        justify-content: center;
+    } 
+}
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+
+    body {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    /* HEADER STYLING WEB */
+    
+    header {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 60px;
+        padding-bottom: 0;
+    }
+    
+    /* LOGO WEB */
+    
+    .logo img {
+        width: 100%;
+        max-width: 140px;
+        height: auto;
+    }
+    
+    .logo a {
+        text-decoration: none;
+    }
+    
+    /* MENU WEB */
+    
+    .menu {
+        list-style: none;
+        display: flex;
+        align-self: center;
+    }
+    
+    .menu li {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: white;
+        padding: 15px;
+        text-transform: uppercase;
+    }
+    
+    .menu-icon {
+        display: none;
+    }
+    
+    #menu-toggle {
+        display: none;
+    }
+    
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: none;
+    }
+    
+    .menu ul {
+        list-style-type: none;
+    }
+    
+    .menu ul li {
+        display: inline;
+    }
+    
+    .menu ul li a {
+        font-family: var(--h2-font-family);
+        color: var(--font);
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 200;
+    }
+    
+    /* hover effekt af menu punkter */
+    .menu ul li a:hover {
+        color: var(--color2);
+    }
+
+
+/* OM MIG STYLING */
+
+.box1 {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 70px;
+    margin-bottom: 20px;
+}
+
+.box1 .tekst-box1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* overskrift */
+.box1 .box-overskrift-ommig {
+    margin: 0;
+    display: flex;
+
+}
+.box1 .box-overskrift-ommig h2 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-family: var(--h2-font-family);
+    color: var(--font);
+}
+
+/* tekst og foto */
+.box1 .tekst-box1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box1 .tekst-box1 .tekst1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box1 .tekst-box1 .tekst1 .p1 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 350;
+    line-height: 24px;
+    font-family: var(--p-font-family);
+    color: var(--font);
+    align-self: flex-end;
+    width: 100%;
+    max-width: 700px;
+}
+
+.box1 .tekst-box1 .foto-box {
+    align-self: flex-start;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.box1 .tekst-box1 .foto-box img {
+    width: 100%;
+    max-width: 350px;
+    min-width: 200px;
+    border-radius: 10px;
+}
+
+.box1 .foto-box2 img {
+display: none;
+}
+
+/* PROGRAMMER */
+.box1 .tool-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.box1 .tekst-box1 .tekst1 .tool-box .img1 img {
+    width: 100%;
+    max-width: 400px;
+}
+    /* FOOTER STYLING WEB */
+    .footer-box {
+        margin: 0;
+        background-color: var(--font);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+/*copy og some*/
+    .footer-box .copy-some-footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-box .copy-some-footer .some-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        padding-bottom: 10px;
+    }
+
+    .footer-box .copy-some-footer .some-box img {
+        width: 100%;
+        max-width: 50px;
+    }
+
+    .footer-box .copy-some-footer .copy {
+        font-family: var(--p-font-family);
+        color: var(--font2);
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 200;
+        display: flex;
+        justify-content: center;
+    } 
+}    
+
+@media screen and (min-width: 1001px) {
+
+    body {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+    /* HEADER STYLING WEB */
+
+    header {
+        max-width: 1500px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 120px;
+    }
+    
+    /* LOGO WEB */
+    
+    .logo img {
+        width: 100%;
+        max-width: 140px;
+        height: auto;
+    }
+    
+    .logo a {
+        text-decoration: none;
+    }
+    
+    /* MENU WEB */
+    
+    .menu {
+        list-style: none;
+        display: flex;
+        align-self: center;
+    }
+    
+    .menu li {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+        text-transform: uppercase;
+    }
+    
+    .menu-icon {
+        display: none;
+    }
+    
+    #menu-toggle {
+        display: none;
+    }
+    
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: none;
+    }
+    
+    .menu ul {
+        list-style-type: none;
+    }
+    
+    .menu ul li {
+        display: inline;
+    }
+    
+    .menu ul li a {
+        font-family: var(--h2-font-family);
+        color: var(--font);
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 200;
+    }
+    
+    /* hover effekt af menu punkter */
+    .menu ul li a:hover {
+        color: var(--color2);
+    }
+
+/* OM MIG STYLING */
+
+.box1 {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 140px;
+    margin-bottom: 20px;
+}
+
+.box1 .tekst-box1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* overskrift */
+.box1 .box-overskrift-ommig {
+    margin: 0;
+    display: flex;
+
+}
+.box1 .box-overskrift-ommig h2 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-family: var(--h2-font-family);
+    color: var(--font);
+}
+
+/* tekst og foto */
+.box1 .tekst-box1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box1 .tekst-box1 .tekst1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.box1 .tekst-box1 .tekst1 .p1 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 350;
+    line-height: 24px;
+    font-family: var(--p-font-family);
+    color: var(--font);
+    align-self: flex-end;
+    width: 100%;
+    max-width: 700px;
+}
+
+.box1 .tekst-box1 .foto-box {
+    align-self: flex-start;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.box1 .tekst-box1 .foto-box img {
+    width: 100%;
+    max-width: 350px;
+    min-width: 200px;
+    border-radius: 10px;
+}
+
+.box1 .foto-box2 img {
+display: none;
+}
+
+/* PROGRAMMER */
+.box1 .tool-box {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.box1 .tool-box img {
+    width: 100%;
+    max-width: 400px;
+}
+
+
+    /* FOOTER STYLING WEB */
+
+.footer-box {
+    background-color: var(--font);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/*copy og some*/
+
+.footer-box .copy-some-footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-box .copy-some-footer .some-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 10px;
+}
+
+.footer-box .copy-some-footer .some-box img {
+    width: 100%;
+    max-width: 50px;
+}
+
+
+.footer-box .copy-some-footer .copy {
+    font-family: var(--p-font-family);
+    color: var(--font2);
+    font-size: 18px;
+    letter-spacing: 1px;
     font-weight: 200;
+    display: flex;
+    justify-content: center;
 }
-
-.menu-box ul li a:hover {
-    color: var(--color2);
 }
-
-
-
-
-
-
 

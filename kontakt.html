@@ -7,76 +7,104 @@
     <link rel="stylesheet" href="kontakt.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Play:wght@400;700&family=Train+One&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Play:wght@400;700&family=Train+One&display=swap" rel="stylesheet">
 </head>
-
+ 
 <body>
+    <header>
+        <div class="logo">
+            <a href="forside.html"><img src="billeder/logo2.png" alt="Liltorp Design logo"></a>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav class="menu">
+            <ul>
+                <li><a href="forside.html">Forside</a></li>
+                <li><a href="projekter.html">Projekter</a></li>
+                <li><a href="om-mig.html">Om mig</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- HEADER -->
-<header class="header-box">
+<!-- KONTAKT -->
 
-    <!-- LOGO -->
-    <div class="logo-box">
-        <img src="billeder/logo.png" alt="liltorp design logo">
-    </div>
-
-    <!-- MENU -->
-    <div class="menu-box">
-        <ul>
-            <li><a href="forside.html">FORSIDE</a></li>
-            <li><a href="projekter.html">PROJEKTER</a></li>
-            <li><a href="om-mig.html">OM MIG</a></li>
-            <li><a href="kontakt.html">KONTAKT</a></li>
-        </ul>
-    </div>
-</header>
-
-
+<!-- overskrift-->  
 <section>
-    <div class="kontakt-box">
-        <div class="overskrift-tekst-kontakt">    
-            
-            <!-- overskrift -->
-            <div class="kontakt-mig-overskrift">
-                <h2>Kontakt mig</h2>
+    <div class="kontakt-mig-overskrift">
+        <h2>KONTAKT MIG</h2>
+    </div>
+    
+    <div class="kontakt-box"> 
+        <!-- tekst -->
+        <div class="kontakt-tekst">
+            <div class="linje1">
+            Er du klar til et samarbejde? Eller har du spørgsmål til mine kompetencer?
             </div>
-            
-            <!-- tekst -->
-            <div class="kontakt-tekst">
-                <p>
-                Sammen kan vi skabe din virksomheds visuelle identitet. Kontakt mig i dag, og lad os begynde rejsen mod et unikt design.
-                <br> 
+            <div class="rest-linjer">Kontakt mig i dag,  så vi sammen kan begynde rejsen mod et unikt design, der passer til din virksomheds visuelle identitet.
                 <br>
-                Er du klar til et samarbejde? Har du spørgsmål til mine kompetencer? Eller er du tvivl om jeg kan hjælpe dig?
-                <br>
-                <br>
-                Så tøv ikke med at kontakte mig. Send mig en mail, giv mig et kald eller udfyld kontaktformularen, så vender jeg tilbage til dig hurtigst muligt.
-                </p>
-                <!-- kontaktinformation -->
-                <p class="kontakt-info-overskrift">Kontakt informationer:</p>
-                <p class="mail-tlf">natashaliltorp@hotmail.com
-                    <br>+45 27 62 28 01
-                </p>
+                Send mig en mail, giv mig et kald eller udfyld kontaktformularen, så vender jeg tilbage til dig hurtigst muligt.
             </div>
-
         </div>
-
-        <!-- kontaktformular her -->
-        <div class="box-kontaktformular">
-            <form>
-                <label for="navn">Dit navn</label>
+    
+        <!-- kontaktformular -->
+        <div class="formular-box">
+            <div class="form-box">
+                <label>Dit navn</label>
                 <input type="text" name="navn" required>
-                <label for="mail">Din e-mail</label>
+                <label>Din e-mail</label>
                 <input type="text" name="mail" required>
-                <label for="Emne">Emne</label>
-                <input type="text" name="emne" required>
-                <label for="besked">Skriv din besked her</label>
+                <label>Skriv din besked her</label>
                 <textarea name="besked" rows="4" required></textarea>
-                <button type="submit">Send</button>
-
-            </form>
-
+            </div>
+            <div class="send-knap">
+                <button type="submit">SEND</button>
+            </div>
         </div>
     </div>
 
-</section>
+        <!-- kontaktinfo -->
+    <div class="kontaktinfo-box">
+        <!-- mail og nummer -->
+        <div class="mail-kontakt">
+            <div class="mail-icon">
+                <img src="billeder/mail.png" alt="mail icon">
+            </div>
+            
+            <div class="mail">
+                <a href="mailto:natashaliltorp@hotmail.com">natashaliltorp@hotmail.com</a>
+            </div>
+        </div>
+
+        <div class="tlf-kontakt">
+            <div class="tlf-icon">
+                <img src="billeder/phone.png" alt="telefon icon">
+            </div>
+            <div class="tlf">
+                <a href="tel:+4527622801">+45 27 62 28 01</a>
+            </div>
+        </div>
+    </div>
+
+
+</section> 
+
+
+<!-- FOOTER -->    
+    <footer class="footer-box">
+        <div class="copy-some-footer">
+            <div class="some-box">
+                <div class="some">
+                    <a href="http://facebook.com/natashaliltorphansen/" target="_blank"><img src="billeder/facebook-icon.png" alt="facebook icon"></a>
+                    <a href="http://instagram.com/natashaliltorp/" target="_blank"><img src="billeder/instagram-icon.png" alt="instagram icon"></a>
+                </div>
+            </div>
+           <div class="copy">
+            2024 &copy; Liltorp Design
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>

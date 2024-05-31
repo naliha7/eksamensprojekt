@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,50 +7,151 @@
     <link rel="stylesheet" href="projekter.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Play:wght@400;700&family=Train+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Play:wght@400;700&family=Train+One&display=swap" rel="stylesheet">
 </head>
+ 
 <body>
-    
-<!-- HEADER -->
-<header class="header-box">
-
-    <!-- LOGO -->
-    <div class="logo-box">
-        <img src="billeder/logo.png" alt="liltorp design logo">
-    </div>
-
-    <!-- MENU -->
-    <div class="menu-box">
-        <ul>
-            <li><a href="forside.html">FORSIDE</a></li>
-            <li><a href="projekter.html">PROJEKTER</a></li>
-            <li><a href="om-mig.html">OM MIG</a></li>
-            <li><a href="kontakt.html">KONTAKT</a></li>
-        </ul>
-    </div>
-</header>
-
-    <div class="ramme-projekt">
-        <div class="box-overskrift-projekt">
-            <h2>Mine projekter</h2>
+    <header>
+        <div class="logo">
+            <a href="forside.html"><img src="billeder/logo2.png" alt="Liltorp Design logo"></a>
         </div>
-    
-        <img class="projekt1" alt="" src="billeder/produkt-foto.jpg">
-            <div class="box-text-projekt1">
-                <h2>produkt billede</h2>
-            </div>
-        <img class="projekt2" alt="" src="billeder/newsapp.png">
-            <div class="box-text-projekt2"></div>
-        <img class="projekt3" alt="" src="billeder/portræt.png">
-            <div class="box-text-projekt3"></div>
-        <img class="projekt4" alt="" src="billeder/IMG_9370 1.png">
-            <div class="box-text-projekt4"></div>
-        <img class="projekt5" alt="" src="billeder/IMG_9371 2.png">
-            <div class="box-text-projekt5"></div>
-        <img class="projekt6" alt="" src="billeder/IMG_9163 10.png">
-            <div class="box-text-projekt6"></div>
-    </div>
-  </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav class="menu">
+            <ul>
+                <li><a href="forside.html">Forside</a></li>
+                <li><a href="projekter.html">Projekter</a></li>
+                <li><a href="om-mig.html">Om mig</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  </body>
-  </html>
+
+<!-- PROJEKTER -->
+     
+<section class="projekt-box">
+
+    <!-- overskrift projekter -->
+        <div class="box-overskrift-projekt">
+            <h2>MINE PROJEKTER</h2>
+        </div>
+        
+     <!-- alle projekter -->
+        <div class="box-midten">
+
+        <!-- projekt 1 -->
+            <div class="box1">
+                <div class="tekst-p1">
+                    <h2>
+                        PRODUKTFOTO
+                    </h2>
+                    <p>
+                        Billedet er taget af mig i MedieLab på UCL. Et produktbillede, der kan bruges på fx en hjemmeside, i et katalog eller andet. 
+                    </p>
+                </div>
+                <div class="pic-p1">
+                    <img alt="produktfoto" src="billeder/produktfoto.jpg">
+                </div>
+            </div>
+
+        <!-- projekt 2 -->
+            <div class="box2">
+                <div class="tekst-p2">
+                    <h2>
+                        APP DESIGN
+                    </h2>
+                    <p>
+                        I forbindelse med en opgave på studiet, har jeg designet en News App prototype.
+                        <br> 
+                    </p>
+                </div>
+                <div class="pic-p2">
+                    <img alt="app design" src="billeder/newsapp.jpg">
+                </div>
+            </div>
+    
+
+        <!-- projekt 3 -->
+            <div class="box3">
+                <div class="tekst-p3">
+                    <h2>
+                        ILLUSTRATOR PORTRÆT
+                    </h2>
+                    <p>
+                        Jeg kan også lave vector tegninger i Illustrator. Dette er mit første portræt, tegnet med pen-tool.
+                    </p>
+                </div>
+                <div class="pic-p3">
+                        <img alt="illustrator portræt" src="billeder/portræt-illustrator.jpeg">
+                </div>
+            </div>
+
+        <!-- projekt 4 -->
+            <div class="box4">
+                <div class="tekst-p4">
+                    <h2>
+                        VISITKORT
+                    </h2>
+                    <p>
+                     Jeg har designet visitkort til Liltorp Design. Dette er gjort for at vise et eksempel på mit design af visitkort.
+                    </p>
+                </div>
+                <div class="pic-p4">
+                    <img alt="visitkort" src="billeder/visitkort-ld.jpg">
+                </div>
+            </div>
+
+        <!-- projekt 5 -->
+            <div class="box5">
+                <div class="tekst-p5">
+                    <h2>
+                        CSS ANIMATION
+                    </h2>
+                    <p>
+                       Jeg kan hjælpe med at lave animationer i CSS. Dette er blot et eksempel på en opgave på studiet.
+                    </p>
+                </div>
+                <div class="pic-p5">
+                    <video controls autoplay muted>
+                        <source src="billeder/css_animation.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+
+        <!-- projekt 6 -->
+            <div class="box6">
+                <div class="tekst-p6">
+                    <h2>
+                        MOVING ART
+                    </h2>
+                    <p>
+                        I en workshop på studiet har jeg lavet en moving art animation. Her har jeg fået et maleri til at bevæge sig.
+                    </p>
+                </div>
+                <div class="pic-p6">
+                    <video controls autoplay muted>
+                        <source src="billeder/MOVING-ART.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+<!-- FOOTER -->    
+    <footer class="footer-box">
+        <div class="copy-some-footer">
+            <div class="some-box">
+                <div class="some">
+                    <a href="http://facebook.com/natashaliltorphansen/" target="_blank"><img src="billeder/facebook-icon.png" alt="facebook icon"></a>
+                    <a href="http://instagram.com/natashaliltorp/" target="_blank"><img src="billeder/instagram-icon.png" alt="instagram icon"></a>
+                </div>
+            </div>
+           <div class="copy">
+            2024 &copy; Liltorp Design
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
